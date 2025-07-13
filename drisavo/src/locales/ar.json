@@ -1,0 +1,251 @@
+{
+  "home": "الرئيسية",
+  "services": "الخدمات",
+  "about": "من نحن",
+  "contact": "تواصل",
+  "dashboard": "لوحة التحكم",
+  "logout": "تسجيل الخروج",
+  "adminLogin": "تسجيل دخول المدير",
+  "aboutSection": {
+    "title": "عن Drisavo",
+    "p1": "تأسست عام 2013، وكانت Drisavo في طليعة خدمات القيادة الاحترافية، حيث توفر حلول نقل آمنة وموثوقة ومتميزة للأفراد والشركات.",
+    "p2": "فريقنا من المحترفين المعتمدين ملتزم بالتميز، لضمان أن تكون كل رحلة مريحة وآمنة وفي الوقت المحدد. نحن نفخر ببناء علاقات طويلة الأمد مع عملائنا من خلال خدمة استثنائية.",
+    "features": {
+      "licensed": "سائقون محترفون مرخّصون ومؤمَّنون",
+      "modernFleet": "أسطول سيارات حديث ومُصان جيدًا",
+      "support247": "دعم عملاء وخدمات طوارئ على مدار الساعة",
+      "backgroundCheck": "فحوصات خلفية شاملة لجميع السائقين"
+    },
+    "badge": "سنوات من التميز",
+    "stats": {
+      "experience": "سنوات الخبرة",
+      "clients": "عملاء سعداء",
+      "drivers": "سائقون محترفون",
+      "support": "دعم متاح"
+    }
+  },
+  "contactsec": {
+  "title": "اتصل بنا",
+  "subtitle": "هل أنت مستعد لتجربة خدمات قيادة مميزة؟ اتصل بنا اليوم للحصول على عرض شخصي أو لتحديد موعد رحلتك القادمة.",
+  "infoTitle": "معلومات الاتصال",
+  "phone": "الهاتف",
+  "email": "البريد الإلكتروني",
+  "address": "العنوان",
+  "hours": "ساعات العمل",
+  "24_7": "متوفر 24/7",
+  "emergency": "خدمة الطوارئ",
+  "emergencyDesc": "تحتاج مساعدة فورية؟ خط الطوارئ متاح على مدار الساعة.",
+  "formTitle": "أرسل لنا رسالة",
+  "name": "الاسم الكامل",
+  "service": "نوع الخدمة",
+  "message": "الرسالة",
+  "messagePlaceholder": "يرجى وصف متطلباتك...",
+  "chooseService": "اختر الخدمة",
+  "send": "إرسال الرسالة",
+  "sending": "جارٍ الإرسال...",
+  "success": "تم إرسال استفسارك بنجاح! سنتواصل معك قريبًا.",
+  "sendError": "حدث خطأ أثناء إرسال استفسارك.",
+  "loadError": "فشل في تحميل البيانات."
+}
+,
+  "footer": {
+    "description": "خدمات قيادة احترافية يمكنك الوثوق بها. آمنة، موثوقة، ودائمًا في الوقت المحدد.",
+    "services": "الخدمات",
+    "personalDriver": "سائق شخصي",
+    "commercialTransport": "نقل تجاري",
+    "groupTransportation": "نقل جماعي",
+    "corporateServices": "خدمات الشركات",
+    "quickLinks": "روابط سريعة",
+    "aboutUs": "من نحن",
+    "ourTeam": "فريقنا",
+    "careers": "وظائف",
+    "privacyPolicy": "سياسة الخصوصية",
+    "contactInfo": "معلومات الاتصال",
+    "phone": "٠٩٨١٤٥٩٧١٢",
+    "email": "lelasalasad0@gmail.com",
+    "address": "سوريا، دمشق، الميدان",
+    "rights": "جميع الحقوق محفوظة."
+  },
+  "hero": {
+    "title1": "حلول",
+    "title2": "قيادة احترافية",
+    "title3": "يمكنك الوثوق بها",
+    "subtitle": "اختبر خدمات قيادة مميزة مع محترفين معتمدين. آمنون، موثوقون، ودائمًا في الوقت المحدد - هذا هو وعد Drisavo.",
+    "getStarted": "ابدأ اليوم",
+    "ourServices": "خدماتنا",
+    "feature1": {
+      "title": "مؤمن 100%",
+      "desc": "تغطية كاملة"
+    },
+    "feature2": {
+      "title": "متاح 24/7",
+      "desc": "خدمة على مدار الساعة"
+    },
+    "feature3": {
+      "title": "فريق خبير",
+      "desc": "محترفون معتمدون"
+    }
+  },
+  "servicessec": {
+    "loading": "جاري تحميل الخدمات...",
+    "title": "خدماتنا المهنية",
+    "subtitle": "اختر من مجموعتنا الشاملة من خدمات القيادة، كل منها مصمم لتلبية احتياجات النقل الخاصة بك.",
+    "button": "سجل الآن",
+    "whyUs": "لماذا تختار دريسافو؟",
+    "features": [
+      {
+        "title": "دائماً في الوقت المحدد",
+        "desc": "خدمة دقيقة وموثوقة"
+      },
+      {
+        "title": "مؤمن بالكامل",
+        "desc": "تغطية حماية شاملة"
+      },
+      {
+        "title": "سائقون خبراء",
+        "desc": "محترفون معتمدون"
+      }
+    ]
+  },
+  "admin_Login": {
+    "loading": "جاري التحميل...",
+    "title": "دريساڤو - لوحة الإدارة",
+    "subtitle": "يرجى تسجيل الدخول للوصول إلى لوحة التحكم",
+    "email": "البريد الإلكتروني",
+    "emailPlaceholder": "admin@drisavo.com",
+    "password": "كلمة المرور",
+    "passwordPlaceholder": "أدخل كلمة المرور",
+    "login": "تسجيل الدخول",
+    "loggingIn": "جاري تسجيل الدخول...",
+    "invalidCredentials": "بيانات الدخول غير صحيحة",
+    "loginFailed": "فشل تسجيل الدخول. حاول مرة أخرى.",
+    "back": "رجوع",
+    "demo": "بيانات تجريبية: admin@drisavo.com / admin123"
+  },
+  "adminHeader": {
+    "adminUser": "المسؤول",
+    "logout": "تسجيل الخروج"
+  }
+,
+ "adminSidebar": {
+    "title": "لوحة إدارة دريسافو",
+    "dashboard": "لوحة التحكم",
+    "services": "الخدمات",
+    "inquiries": "الاستفسارات",
+    "content": "المحتوى"
+  },
+  "contentManager": {
+    "title": "إدارة المحتوى",
+    "subtitle": "إدارة محتوى الموقع بسهولة",
+    "loading": "جاري تحميل المحتوى...",
+    "refresh": "تحديث",
+    "updateSuccess": "تم تحديث المحتوى بنجاح!",
+    "loadError": "فشل في تحميل المحتوى",
+    "loadFail": "تعذر تحميل المحتوى. الرجاء المحاولة مرة أخرى.",
+    "saveFail": "فشل في حفظ المحتوى. الرجاء المحاولة مرة أخرى.",
+    "editTitle": "تعديل المحتوى",
+    "fields": {
+      "title": "العنوان",
+      "content": "المحتوى",
+      "type": "النوع",
+      "active": "نشط"
+    },
+    "types": {
+      "text": "نص",
+      "html": "HTML",
+      "image": "رابط صورة",
+      "json": "JSON"
+    },
+    "saveChanges": "حفظ التعديلات",
+    "saving": "جارٍ الحفظ...",
+    "cancel": "إلغاء"
+  },
+  "dashboardh": {
+    "title": "لوحة التحكم",
+    "loadingData": "جاري تحميل البيانات...",
+    "welcome": "مرحباً بك! إليك ما يحدث في عملك.",
+    "totalInquiries": "إجمالي الاستفسارات",
+    "activeServices": "الخدمات النشطة",
+    "monthlyGrowth": "النمو الشهري",
+    "satisfiedClients": "العملاء الراضون",
+    "recentInquiries": "الاستفسارات الأخيرة",
+    "generalService": "خدمة عامة",
+    "statusNew": "جديد",
+    "statusInProgress": "قيد المعالجة",
+    "statusCompleted": "مكتمل",
+    "noRecentInquiries": "لا توجد استفسارات حديثة",
+    "quickActions": "إجراءات سريعة",
+    "viewAllInquiries": "عرض جميع الاستفسارات",
+    "manageServices": "إدارة الخدمات",
+    "updateContent": "تحديث المحتوى",
+    "detailedStats": "إحصائيات مفصلة",
+    "newInquiries": "استفسارات جديدة",
+    "inProgress": "قيد المعالجة",
+    "completed": "مكتملة",
+    "today": "اليوم",
+    "loadError": "فشل في تحميل بيانات لوحة التحكم."
+  },
+  "inquiriesManager": {
+      "pageTitle": "إدارة الاستفسارات",
+      "pageSubtitle": "إدارة استفسارات وطلبات العملاء",
+      "refresh": "تحديث",
+      "loading": "جاري تحميل الاستفسارات...",
+      "noInquiries": "لا توجد استفسارات",
+      "contactInfo": "معلومات التواصل",
+      "service": "الخدمة",
+      "date": "التاريخ",
+      "status": "الحالة",
+      "actions": "الإجراءات",
+      "searchPlaceholder": "البحث في الاستفسارات...",
+      "filterAll": "جميع الحالات",
+      "statusNew": "جديد",
+      "statusInProgress": "قيد المعالجة",
+      "statusCompleted": "مكتمل",
+      "statusCancelled": "ملغي",
+      "detailsTitle": "تفاصيل الاستفسار",
+      "labelName": "الاسم",
+      "labelEmail": "البريد الإلكتروني",
+      "labelPhone": "الهاتف",
+      "labelService": "الخدمة",
+      "labelMessage": "الرسالة",
+      "labelDate": "التاريخ",
+      "labelStatus": "الحالة",
+      "labelNotes": "ملاحظات",
+      "closeBtn": "إغلاق",
+      "deleteConfirm": "هل أنت متأكد من حذف هذا الاستفسار؟",
+      "errorLoad": "فشل في تحميل الاستفسارات",
+      "errorUpdate": "فشل في تحديث الحالة",
+      "errorDelete": "فشل في حذف الاستفسار"
+    },
+     "servicesManager": {
+      "pageTitle": "إدارة الخدمات",
+      "pageSubtitle": "إدارة عروض الخدمات الخاصة بك",
+      "loading": "جاري تحميل الخدمات...",
+      "addService": "إضافة خدمة",
+      "editService": "تعديل الخدمة",
+      "addNewService": "إضافة خدمة جديدة",
+      "title": "العنوان",
+      "description": "الوصف",
+      "price": "السعر",
+      "icon": "الأيقونة",
+      "features": "الميزات (واحدة في كل سطر)",
+      "save": "حفظ",
+      "saving": "جاري الحفظ...",
+      "cancel": "إلغاء",
+      "deleteConfirm": "هل أنت متأكد من حذف هذه الخدمة؟",
+      "errorLoading": "فشل في تحميل الخدمات",
+      "errorSaving": "فشل في حفظ الخدمة",
+      "errorDeleting": "فشل في حذف الخدمة",
+      "errorToggle": "فشل في تغيير حالة الخدمة",
+      "saveSuccess": "تم حفظ الخدمة بنجاح",
+      "deleteSuccess": "تم حذف الخدمة بنجاح",
+      "toggleSuccess": "تم تغيير حالة الخدمة بنجاح",
+      "active": "نشط",
+      "inactive": "غير نشط",
+      "edit": "تعديل",
+      "delete": "حذف",
+      "featuresLabel": "الميزات:",
+      "priceLabel": "السعر:"
+    }
+
+}

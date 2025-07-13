@@ -1,0 +1,250 @@
+{
+  "home": "Accueil",
+  "services": "Services",
+  "about": "À propos",
+  "contact": "Contact",
+  "dashboard": "Tableau de bord",
+  "logout": "Déconnexion",
+  "adminLogin": "Connexion Admin",
+  "aboutSection": {
+    "title": "À propos de Drisavo",
+    "p1": "Fondée en 2013, Drisavo est à la pointe des services de conduite professionnelle, offrant des solutions de transport sûres, fiables et haut de gamme aux particuliers et aux entreprises.",
+    "p2": "Notre équipe de professionnels certifiés est engagée dans l’excellence, garantissant que chaque voyage soit confortable, sécurisé et ponctuel. Nous sommes fiers de bâtir des relations durables avec nos clients grâce à un service exceptionnel.",
+    "features": {
+      "licensed": "Chauffeurs professionnels agréés et assurés",
+      "modernFleet": "Flotte de véhicules moderne et bien entretenue",
+      "support247": "Support client et assistance d'urgence 24/7",
+      "backgroundCheck": "Vérifications approfondies pour tous les chauffeurs"
+    },
+    "badge": "Années d’excellence",
+    "stats": {
+      "experience": "Années d'expérience",
+      "clients": "Clients satisfaits",
+      "drivers": "Chauffeurs professionnels",
+      "support": "Support disponible"
+    }
+  },
+ "contactsec": {
+  "title": "Contactez-nous",
+  "subtitle": "Prêt à découvrir des services de conduite haut de gamme ? Contactez-nous dès aujourd'hui pour un devis personnalisé ou pour planifier votre prochain trajet.",
+  "infoTitle": "Informations de contact",
+  "phone": "Téléphone",
+  "email": "E-mail",
+  "address": "Adresse",
+  "hours": "Heures d'ouverture",
+  "24_7": "Disponible 24/7",
+  "emergency": "Service d'urgence",
+  "emergencyDesc": "Besoin d'aide immédiate ? Notre hotline d'urgence est disponible 24h/24.",
+  "formTitle": "Envoyez-nous un message",
+  "name": "Nom complet",
+  "service": "Type de service",
+  "message": "Message",
+  "messagePlaceholder": "Veuillez décrire vos besoins...",
+  "chooseService": "Choisir un service",
+  "send": "Envoyer le message",
+  "sending": "Envoi...",
+  "success": "Votre demande a été envoyée avec succès ! Nous vous contacterons bientôt.",
+  "sendError": "Une erreur est survenue lors de l'envoi de votre demande.",
+  "loadError": "Échec du chargement des données."
+}
+,
+  "footer": {
+    "description": "Services de conduite professionnels en qui vous pouvez avoir confiance. Sûr, fiable et toujours à l'heure.",
+    "services": "Services",
+    "personalDriver": "Chauffeur personnel",
+    "commercialTransport": "Transport commercial",
+    "groupTransportation": "Transport de groupe",
+    "corporateServices": "Services aux entreprises",
+    "quickLinks": "Liens rapides",
+    "aboutUs": "À propos de nous",
+    "ourTeam": "Notre équipe",
+    "careers": "Carrières",
+    "privacyPolicy": "Politique de confidentialité",
+    "contactInfo": "Infos de contact",
+    "phone": "0981459712",
+    "email": "lelasalasad0@gmail.com",
+    "address": "Syrie, Damas, Al-Medan",
+    "rights": "Tous droits réservés."
+  },
+  "hero": {
+    "title1": "Solutions",
+    "title2": "de Conduite Professionnelle",
+    "title3": "en Qui Vous Pouvez Avoir Confiance",
+    "subtitle": "Découvrez des services de conduite premium avec nos professionnels certifiés. Sûrs, fiables et toujours à l'heure - telle est la promesse de Drisavo.",
+    "getStarted": "Commencez aujourd'hui",
+    "ourServices": "Nos Services",
+    "feature1": {
+      "title": "100% Assuré",
+      "desc": "Protection complète"
+    },
+    "feature2": {
+      "title": "Disponible 24/7",
+      "desc": "Service continu"
+    },
+    "feature3": {
+      "title": "Équipe d'experts",
+      "desc": "Professionnels certifiés"
+    }
+  },
+   "servicessec": {
+    "loading": "Chargement des services...",
+    "title": "Nos Services Professionnels",
+    "subtitle": "Choisissez parmi notre gamme complète de services de conduite, chacun conçu pour répondre à vos besoins de transport.",
+    "button": "Inscrivez-vous maintenant",
+    "whyUs": "Pourquoi choisir Drisavo ?",
+    "features": [
+      {
+        "title": "Toujours à l'heure",
+        "desc": "Service précis et fiable"
+      },
+      {
+        "title": "Entièrement assuré",
+        "desc": "Couverture de protection complète"
+      },
+      {
+        "title": "Chauffeurs experts",
+        "desc": "Professionnels certifiés"
+      }
+    ]
+  },
+  "admin_Login": {
+    "loading": "Chargement...",
+    "title": "Drisavo - Panneau Admin",
+    "subtitle": "Veuillez vous connecter pour accéder au tableau de bord",
+    "email": "Email",
+    "emailPlaceholder": "admin@drisavo.com",
+    "password": "Mot de passe",
+    "passwordPlaceholder": "Entrez votre mot de passe",
+    "login": "Se connecter",
+    "loggingIn": "Connexion...",
+    "invalidCredentials": "Identifiants invalides",
+    "loginFailed": "Échec de la connexion. Veuillez réessayer.",
+    "back": "Retour",
+    "demo": "Identifiants de démonstration: admin@drisavo.com / admin123"
+  },
+  "adminHeader": {
+    "adminUser": "Administrateur",
+    "logout": "Se déconnecter"
+  }
+,"adminSidebar": {
+    "title": "Administration Drisavo",
+    "dashboard": "Tableau de bord",
+    "services": "Services",
+    "inquiries": "Demandes",
+    "content": "Contenu"
+  },
+  "contentManager": {
+    "title": "Gestion de contenu",
+    "subtitle": "Gérez facilement le contenu du site",
+    "loading": "Chargement du contenu...",
+    "refresh": "Actualiser",
+    "updateSuccess": "Contenu mis à jour avec succès !",
+    "loadError": "Échec du chargement du contenu",
+    "loadFail": "Échec du chargement du contenu. Veuillez réessayer.",
+    "saveFail": "Échec de l'enregistrement du contenu. Veuillez réessayer.",
+    "editTitle": "Modifier le contenu",
+    "fields": {
+      "title": "Titre",
+      "content": "Contenu",
+      "type": "Type",
+      "active": "Actif"
+    },
+    "types": {
+      "text": "Texte",
+      "html": "HTML",
+      "image": "URL de l'image",
+      "json": "JSON"
+    },
+    "saveChanges": "Enregistrer les modifications",
+    "saving": "Enregistrement...",
+    "cancel": "Annuler"
+  },
+  "dashboardh": {
+    "title": "Tableau de bord",
+    "loadingData": "Chargement des données...",
+    "welcome": "Bienvenue ! Voici ce qui se passe dans votre entreprise.",
+    "totalInquiries": "Total des demandes",
+    "activeServices": "Services actifs",
+    "monthlyGrowth": "Croissance mensuelle",
+    "satisfiedClients": "Clients satisfaits",
+    "recentInquiries": "Demandes récentes",
+    "generalService": "Service général",
+    "statusNew": "Nouveau",
+    "statusInProgress": "En cours",
+    "statusCompleted": "Terminé",
+    "noRecentInquiries": "Aucune demande récente",
+    "quickActions": "Actions rapides",
+    "viewAllInquiries": "Voir toutes les demandes",
+    "manageServices": "Gérer les services",
+    "updateContent": "Mettre à jour le contenu",
+    "detailedStats": "Statistiques détaillées",
+    "newInquiries": "Nouvelles demandes",
+    "inProgress": "En cours",
+    "completed": "Terminées",
+    "today": "Aujourd'hui",
+    "loadError": "Échec du chargement des données du tableau de bord."
+  },
+   "inquiriesManager": {
+      "pageTitle": "Gestion des demandes",
+      "pageSubtitle": "Gérer les demandes et requêtes des clients",
+      "refresh": "Rafraîchir",
+      "loading": "Chargement des demandes...",
+      "noInquiries": "Aucune demande trouvée",
+      "contactInfo": "Informations de contact",
+      "service": "Service",
+      "date": "Date",
+      "status": "Statut",
+      "actions": "Actions",
+      "searchPlaceholder": "Rechercher dans les demandes...",
+      "filterAll": "Tous les statuts",
+      "statusNew": "Nouveau",
+      "statusInProgress": "En cours",
+      "statusCompleted": "Terminé",
+      "statusCancelled": "Annulé",
+      "detailsTitle": "Détails de la demande",
+      "labelName": "Nom",
+      "labelEmail": "Email",
+      "labelPhone": "Téléphone",
+      "labelService": "Service",
+      "labelMessage": "Message",
+      "labelDate": "Date",
+      "labelStatus": "Statut",
+      "labelNotes": "Notes",
+      "closeBtn": "Fermer",
+      "deleteConfirm": "Êtes-vous sûr de vouloir supprimer cette demande ?",
+      "errorLoad": "Échec du chargement des demandes",
+      "errorUpdate": "Échec de la mise à jour du statut",
+      "errorDelete": "Échec de la suppression de la demande"
+    }
+  ,"servicesManager": {
+      "pageTitle": "Gestion des services",
+      "pageSubtitle": "Gérez vos offres de services",
+      "loading": "Chargement des services...",
+      "addService": "Ajouter un service",
+      "editService": "Modifier le service",
+      "addNewService": "Ajouter un nouveau service",
+      "title": "Titre",
+      "description": "Description",
+      "price": "Prix",
+      "icon": "Icône",
+      "features": "Caractéristiques (une par ligne)",
+      "save": "Enregistrer",
+      "saving": "Enregistrement...",
+      "cancel": "Annuler",
+      "deleteConfirm": "Êtes-vous sûr de vouloir supprimer ce service ?",
+      "errorLoading": "Échec du chargement des services",
+      "errorSaving": "Échec de l'enregistrement du service",
+      "errorDeleting": "Échec de la suppression du service",
+      "errorToggle": "Échec du changement du statut du service",
+      "saveSuccess": "Service enregistré avec succès",
+      "deleteSuccess": "Service supprimé avec succès",
+      "toggleSuccess": "Statut du service modifié avec succès",
+      "active": "Actif",
+      "inactive": "Inactif",
+      "edit": "Modifier",
+      "delete": "Supprimer",
+      "featuresLabel": "Caractéristiques :",
+      "priceLabel": "Prix :"
+    }
+
+}

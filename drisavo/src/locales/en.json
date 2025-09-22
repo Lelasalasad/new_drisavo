@@ -1,251 +1,380 @@
 {
   "home": "Home",
-  "services": "Services",
-  "about": "About",
-  "contact": "Contact",
+  "Services": "Services",
+  "Cities": "Cities",
+  "Certificated-Instructors": "Certified Instructors",
+  "Company that Innovates": "Company that Innovates",
   "dashboard": "Dashboard",
   "logout": "Logout",
   "adminLogin": "Admin Login",
-  "aboutSection": {
-    "title": "About Drisavo",
-    "p1": "Founded in 2013, Drisavo has been at the forefront of professional driving services, providing safe, reliable, and premium transportation solutions to individuals and businesses.",
-    "p2": "Our team of certified professionals is committed to excellence, ensuring every journey is comfortable, secure, and punctual. We pride ourselves on building lasting relationships with our clients through exceptional service.",
-    "features": {
-      "licensed": "Licensed and insured professional drivers",
-      "modernFleet": "Modern, well-maintained vehicle fleet",
-      "support247": "24/7 customer support and emergency assistance",
-      "backgroundCheck": "Comprehensive background checks on all drivers"
+  "enrollNow": "Enroll Now",
+  
+  
+  "hero": {
+    "loading": "Loading content...",
+    "loadFail": "Failed to load content. Please try again later.",
+    "title1": "Learn to Drive",
+    "title1Line2": "with Confidence",
+    "subtitle1": "Join thousands of successful drivers with our expert-led courses tailored for all skill levels.",
+    "title2": "Master the Road",
+    "title2Line2": "with Drisavo",
+    "subtitle2": "Flexible, professional training to help you pass your driving test with ease.",
+    "enroll": "Enroll Now",
+    "howItWorks": "How It Works",
+    "happyCustomers": "Happy Customers",
+    "rating": "Average Rating",
+    "newsworthyTitle": "As Seen On",
+    "servicesBtn": "Our Services",
+    "servicesTitle": "Tailored Driving Lessons for Everyone",
+    "servicesInstruction": "Explore our comprehensive driving courses designed to meet your needs.",
+    "learnMore": "Learn More",
+    "specialOffersTitle": "Special Offers",
+    "noDetails": "No details available",
+    "reviewsBtn": "Customer Feedback",
+    "reviewsTitle": "What Our Students Say",
+    "offers": {
+      "beginnerPackage": {
+        "title": "Beginner Driver’s Education Package",
+        "details": [
+          "10 hours in-car lessons",
+          "20 hours online theory",
+          "Free pickup and drop-off"
+        ]
+      },
+      "refresherLessons": {
+        "title": "Refresher Driving Lessons",
+        "details": [
+          "5 hours in-car lessons",
+          "Flexible scheduling",
+          "Professional instructors"
+        ]
+      }
     },
-    "badge": "Years of Excellence",
-    "stats": {
-      "experience": "Years Experience",
-      "clients": "Happy Clients",
-      "drivers": "Professional Drivers",
-      "support": "Available Support"
+    
+    "reviews": {
+      "review1": {
+        "text": "Amazing driving school! The instructors are patient and professional.",
+        "author": "John Doe",
+        "date": "Jan 2025"
+      },
+      "review2": {
+        "text": "I passed my driving test on the first try thanks to Drisavo!",
+        "author": "Sarah Smith",
+        "date": "Feb 2025"
+      }
     }
-  },
-  "contactsec": {
-  "title": "Contact Us",
-  "subtitle": "Ready to experience premium driving services? Contact us today for a personalized quote or to schedule your next trip.",
-  "infoTitle": "Contact Information",
-  "phone": "Phone",
-  "email": "Email",
-  "address": "Address",
-  "hours": "Working Hours",
-  "24_7": "Available 24/7",
-  "emergency": "Emergency Service",
-  "emergencyDesc": "Need immediate help? Our emergency hotline is available 24/7.",
-  "formTitle": "Send Us a Message",
-  "name": "Full Name",
-  "service": "Service Type",
-  "message": "Message",
-  "messagePlaceholder": "Please describe your requirements...",
-  "chooseService": "Choose Service",
-  "send": "Send Message",
-  "sending": "Sending...",
-  "success": "Your inquiry has been sent successfully! We will contact you soon.",
-  "sendError": "An error occurred while sending your inquiry.",
-  "loadError": "Failed to load data."
-},
-
-  "footer": {
-    "description": "Professional driving services you can trust. Safe, reliable, and always on time.",
-    "services": "Services",
-    "personalDriver": "Personal Driver",
-    "commercialTransport": "Commercial Transport",
-    "groupTransportation": "Group Transportation",
-    "corporateServices": "Corporate Services",
-    "quickLinks": "Quick Links",
-    "aboutUs": "About Us",
-    "ourTeam": "Our Team",
-    "careers": "Careers",
-    "privacyPolicy": "Privacy Policy",
-    "contactInfo": "Contact Info",
-    "phone": "0981459712",
-    "email": "lelasalasad0@gmail.com",
-    "address": "Syria, Damascus, Al-Medan",
-    "rights": "All rights reserved."
   }
 ,
-"hero": {
-    "title1": "Professional",
-    "title2": "Driving Solutions",
-    "title3": "You Can Trust",
-    "subtitle": "Experience premium driving services with our certified professionals. Safe, reliable, and always on time - that's the Drisavo promise.",
-    "getStarted": "Get Started Today",
-    "ourServices": "Our Services",
-    "feature1": {
-      "title": "100% Insured",
-      "desc": "Full coverage protection"
-    },
-    "feature2": {
-      "title": "24/7 Available",
-      "desc": "Round-the-clock service"
-    },
-    "feature3": {
-      "title": "Expert Team",
-      "desc": "Certified professionals"
+"drisavoWorks": {
+  "title": "Drisavo is your trusted partner for professional driving and transportation services.",
+  "subtitle": "Book a driver or schedule a service in 4 easy steps:",
+  "step1": "Sign up and create your profile.",
+  "step2": "Choose the type of service you need.",
+  "step3": "Select a package or custom plan.",
+  "step4": "Confirm your booking and we’ll be on our way!"
+}
+,   
+  "payment": {
+    "formTitle": "Enrollment / Book Lesson",
+    "formSubtitle": "Select a package and enter student details",
+    "studentNameLabel": "Student Name*",
+    "firstNamePlaceholder": "First Name",
+    "lastNamePlaceholder": "Last Name",
+    "studentEmailLabel": "Student Email*",
+    "emailPlaceholder": "email@example.com",
+    "studentPhoneLabel": "Student Phone*",
+    "phonePlaceholder": "+1...",
+    "availablePackagesLabel": "Available Packages",
+    "noPackages": "No packages available at the moment.",
+    "totalLabel": "Total",
+    "bookLesson": "Book Lesson",
+    "processing": "Processing...",
+    "successMessage": "Booking completed successfully!",
+    "errorMessages": {
+      "fetchServicesFailed": "Failed to fetch packages from the server.",
+      "missingFields": "Please fill all fields and select a package.",
+      "loginRequired": "You must log in first to complete the booking.",
+      "invalidPackage": "Please select a valid package.",
+      "bookingFailed": "Failed to submit booking request: "
     }
   },
-  "servicessec": {
-    "loading": "Loading services...",
-    "title": "Our Professional Services",
-    "subtitle": "Choose from our comprehensive range of driving services, each designed to meet your transportation needs.",
-    "button": "Register Now",
-    "whyUs": "Why Choose Drisavo?",
-    "features": [
-      {
-        "title": "Always On Time",
-        "desc": "Precise and reliable service"
-      },
-      {
-        "title": "Fully Insured",
-        "desc": "Comprehensive protection coverage"
-      },
-      {
-        "title": "Expert Drivers",
-        "desc": "Certified professionals"
-      }
-    ]
-  },
-  "admin_Login": {
-    "loading": "Loading...",
-    "title": "Drisavo - Admin Panel",
-    "subtitle": "Please log in to access the dashboard",
-    "email": "Email",
-    "emailPlaceholder": "admin@drisavo.com",
+  "packages": "Packages",
+  "choosePackage": "Choose a package that suits you",
+  "failedLoadPackages": "Failed to load packages",
+  "pleaseLoginOrSignup": "Please login or sign up to see available packages.",
+  "haveCode": "Have a verification code?",
+  "loggedIn": "Logged in",
+  "loadingPackages": "Loading packages...",
+  "noPackages": "No packages available",
+  "price": "Price",
+  "hours": "Hours",
+  "dates": "Dates",
+  "total": "Total",
+  "bookLesson": "Book / Pay",
+  "createAccount": "Create account",
+  "mustLogin": "You must login first",
+  "selectPackage": "Please select a package",
+  "proceedStripe": "Redirecting to payment...",
+  "loggedOut": "You have been logged out",
+  "signup": {
+    "title": "Create an Account",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "name": "Full Name",
+    "email": "Email Address",
     "password": "Password",
-    "passwordPlaceholder": "Enter your password",
-    "login": "Log In",
-    "loggingIn": "Logging in...",
-    "invalidCredentials": "Invalid login credentials",
-    "loginFailed": "Login failed. Please try again.",
-    "back": "Back",
-    "demo": "Demo credentials: admin@drisavo.com / admin123"
+    "confirmPassword": "Confirm Password",
+    "selectGender": "Select Gender",
+    "male": "Male",
+    "female": "Female",
+    "phone": "Phone Number",
+    "birthday": "Birthday",
+    "location": "Location",
+    "selectLocation": "Choose a city or pick below",
+    "other": "Other",
+    "useMyLocation": "Use my location",
+    "picking": "Picking...",
+    "coords": "Coordinates",
+    "noCoords": "No coordinates selected",
+    "button": "Sign Up",
+    "passwordMismatch": "Passwords do not match",
+    "coordsRequired": "Please pick a location (latitude & longitude required).",
+    "geolocationNotSupported": "Geolocation is not supported by your browser.",
+    "locationPicked": "Location picked successfully",
+    "locationError": "Could not get your location",
+    "success": "Signup successful! Please verify your email.",
+    "failed": "Signup failed. Please try again.",
+    "error": "An error occurred during signup."
+  }
+  
+  ,
+  "login": {
+    "title": "Welcome Back",
+    "subtitle": "Log in to your account to continue",
+    "email": "Email Address",
+    "password": "Password",
+    "button": "Log In",
+    "noAccount": "Don't have an account?",
+    "signupLink": "Sign Up",
+    "success": "Login successful! Redirecting...",
+    "failed": "Login failed. Please try again.",
+    "error": "An error occurred during login.",
+    "alreadyAccount":"Already have an account?",
+    "loginLink":"Login"
+  }
+  ,
+  "verify": {
+    "title": "Verify Account",
+    "subtitle": "",
+    "placeholder": "Verification Code",
+    "button": "Verify",
+    "success": "Account verified",
+    "failed": "Invalid verification code",
+    "error": "Verification error",
+    "sentTo": "We sent a code to",
+    "enterBelow": "Enter it below.",
+    "submitting": "Verifying...",
+    "enterCode": "Please enter the verification code",
+    "noEmail": "No email provided",
+    "didntReceive": "Didn't receive the code? Check your spam folder or make sure the email is correct."
   },
-  "adminHeader": {
-    "adminUser": "Admin User",
-    "logout": "Logout"
+  "footer": {
+    "Navigation": "Navigation",
+    "ServicesSection": "Services",
+    "CompanySection": "Company",
+    "companyDescription": "From Beginner Driver’s Education (BDE) certificates to connecting students with local MTO-certified instructors, Drisavo is evolving into a platform for complete mobility solutions.",
+    "services": {
+      "bde": "BDE Program",
+      "private": "Private Lesson",
+      "roadtest": "Road Test"
+    },
+    "company": {
+      "privacy": "Privacy Policy",
+      "about": "About Us",
+      "careers": "Careers",
+      "team": "Our Team"
+    },
+    "copyright": "© {year} Drisavo. All rights reserved."
   },
   
+  "servicesManager": {
+    "pageTitle": "Manage Services",
+    "pageSubtitle": "Create, edit, or delete driving school services.",
+    "loading": "Loading services...",
+    "addService": "Add New Service",
+    "editService": "Edit Service",
+    "addNewService": "Add New Service",
+    "title": "Service Title",
+    "description": "Description",
+    "price": "Price",
+    "originalPrice": "Original Price",
+    "category": "Category",
+    "features": "Features",
+    "featuresPlaceholder": "Enter one feature per line",
+    "icon": "Icon",
+    "active": "Active",
+    "inactive": "Inactive",
+    "cancel": "Cancel",
+    "save": "Save",
+    "saving": "Saving...",
+    "edit": "Edit",
+    "delete": "Delete",
+    "priceLabel": "Price:",
+    "featuresLabel": "Features:",
+    "saveSuccess": "Service saved successfully!",
+    "deleteSuccess": "Service deleted successfully!",
+    "toggleSuccess": "Service status updated successfully!",
+    "errorLoading": "Failed to load services.",
+    "errorSaving": "Failed to save service.",
+    "errorDeleting": "Failed to delete service.",
+    "errorToggle": "Failed to update service status.",
+    "deleteConfirm": "Are you sure you want to delete this service?",
+    "categoryRequired": "Category is required",
+    "titleRequired": "Title is required",
+    "priceRequired": "Price is required"
+  },
+  
+  "services": {
+    "loading": "Loading...",
+    "noServices": "No services available at the moment.",
+    "noPrivateLessons": "No private lessons available.",
+    "noRoadTest": "No Road Test services available.",
+    "noFAQs": "No FAQs available.",
+    "noPlans": "No plans available.",
+    "includedTitle": "Included:",
+    "errorFetch": "Failed to fetch services: ",
+    "defaultService": {
+      "title": "Default Service",
+      "description": "This is a default service displayed when fetching services from the API fails.",
+      "features": [
+        "Feature 1: Full support.",
+        "Feature 2: High quality.",
+        "Feature 3: Available around the clock."
+      ]
+    }
+  },
+  "aboutPage": {
+    "partnersTitle": "Our Trusted Partners",
+    "partnersLead": "We collaborate with institutions and companies to bring students the best educational opportunities. Join our partner network and empower students with exclusive benefits.",
+    "learnMore": "Learn More",
+    "contactTitle": "Contact us",
+    "contactSubtitle": "Send us a message",
+    "fullName": "Full name",
+    "email": "Email address",
+    "phone": "Phone number",
+    "title": "Title",
+    "message": "Your message",
+    "sendMessage": "Send message"},
+  "cities": {
+    "loading": "Loading cities...",
+    "citiesTitle": "Cities",
+    "emailLabel": "Email: ",
+    "phoneLabel": "Phone: ",
+    "mapLabel": "Map: ",
+    "viewFullMap": "View Full Map",
+    "noMapLink": "No map link available",
+    "detailsTitle": "Details",
+    "quickInfoTitle": "Quick Info",
+    "quickInfo": {
+      "touristAttractions": "Tourist Attractions",
+      "drivingSchools": "Driving Schools",
+      "publicTransport": "Public Transport"
+    },
+    "errorFetch": "Failed to fetch cities: ",
+    "defaultCity": {
+      "name": "Damascus",
+      "description": "A default city for testing — a brief description of the city.",
+      "details": "Additional details about the default city: tourist sites, schools, and general information for testing.",
+      "email": "info@damascus.example",
+      "phone": "+963-11-0000000",
+      "map_link": "https://www.google.com/maps",
+      "noImageText": "No Image"
+    }
+  }
+,
+
+  "instructorPage": {
+    "loading": "Loading...",
+    "noInstructors": "No accepted instructors available.",
+    "certifiedInstructorsTitle": "Certified Instructors",
+    "viewSchedule": "View Schedule",
+    "scheduleTableTitle": "Schedule for",
+    "tableHeaders": {
+      "date": "Date",
+      "from": "From",
+      "to": "To"
+    },
+    "errorLogin": "Login failed: Unable to obtain token",
+    "errorFetch": "An error occurred: ",
+    "errorFetchSchedule": "Failed to fetch schedule for instructor {id}: ",
+    "keyLabel": "Key benefits",
+    "heading": "Perks & Benefits",
+    "benefits": [
+      {
+        "title": "Set Your Schedule",
+        "desc": "Flexibility to be your own boss and manage your time."
+      },
+      {
+        "title": "Expand Your Network",
+        "desc": "Interact with diverse people from around the globe."
+      },
+      {
+        "title": "Competitive Pay",
+        "desc": "We can match rates from any driving school in Canada."
+      },
+      {
+        "title": "Manage Your Profile",
+        "desc": "Your performance drives your attractiveness to customers. It's all on you!"
+      },
+      {
+        "title": "Community Impact",
+        "desc": "Play a key role in promoting road safety and accident reduction."
+      },
+      {
+        "title": "Continuous Learning",
+        "desc": "Opportunities to remain sharp and up-to-date on safety rules and regulations."
+      }
+    ],
+    "documentsTitle": "Documents Required",
+    "documentsIntro": "Our MTO Certified In-car Driving Instructors must have the following documents to be uploaded on the mobile app. Follow the steps and upload the required documents!",
+    "documents": [
+      "In-car Driving Certification",
+      "Valid Ontario Driving Instructor’s License (MTO approved)",
+      "G Driver’s Licence",
+      "Driving Instructor Insurance",
+      "Vehicle Ownership; vehicle in good condition with the brake pedal on the passenger side.",
+      "Ontario Car Safety Check Report.",
+      "Images showing a dual brake pedal for the instructor, front side view of the instructor’s vehicle including the license plate."
+    ]
+  },
   "adminSidebar": {
-    "title": "Drisavo Admin",
+    "title": "Admin Dashboard",
     "dashboard": "Dashboard",
     "services": "Services",
     "inquiries": "Inquiries",
-    "content": "Content"
+    "content": "Content",
+    "cities": "Cities",
+    "trainerContent": "Instructors",
+    "AdminAddPartner": "Partners"
   },
-  "contentManager": {
-    "title": "Content Manager",
-    "subtitle": "Manage website content easily",
-    "loading": "Loading content...",
-    "refresh": "Refresh",
-    "updateSuccess": "Content updated successfully!",
-    "loadError": "Failed to load content",
-    "loadFail": "Failed to load content. Please try again.",
-    "saveFail": "Failed to save content. Please try again.",
-    "editTitle": "Edit Content",
-    "fields": {
-      "title": "Title",
-      "content": "Content",
-      "type": "Type",
-      "active": "Active"
-    },
-    "types": {
-      "text": "Text",
-      "html": "HTML",
-      "image": "Image URL",
-      "json": "JSON"
-    },
-    "saveChanges": "Save Changes",
-    "saving": "Saving...",
-    "cancel": "Cancel"
-  },
-  "dashboardh": {
-    "title": "Dashboard",
-    "loadingData": "Loading data...",
-    "welcome": "Welcome! Here's what's happening in your business.",
-    "totalInquiries": "Total Inquiries",
-    "activeServices": "Active Services",
-    "monthlyGrowth": "Monthly Growth",
-    "satisfiedClients": "Satisfied Clients",
-    "recentInquiries": "Recent Inquiries",
-    "generalService": "General Service",
-    "statusNew": "New",
-    "statusInProgress": "In Progress",
-    "statusCompleted": "Completed",
-    "noRecentInquiries": "No recent inquiries",
-    "quickActions": "Quick Actions",
-    "viewAllInquiries": "View All Inquiries",
-    "manageServices": "Manage Services",
-    "updateContent": "Update Content",
-    "detailedStats": "Detailed Statistics",
-    "newInquiries": "New Inquiries",
-    "inProgress": "In Progress",
-    "completed": "Completed",
-    "today": "Today",
-    "loadError": "Failed to load dashboard data."
-  },
-  "inquiriesManager": {
-      "pageTitle": "Inquiries Management",
-      "pageSubtitle": "Manage customer inquiries and requests",
-      "refresh": "Refresh",
-      "loading": "Loading inquiries...",
-      "noInquiries": "No inquiries found",
-      "contactInfo": "Contact Information",
-      "service": "Service",
-      "date": "Date",
-      "status": "Status",
-      "actions": "Actions",
-      "searchPlaceholder": "Search inquiries...",
-      "filterAll": "All statuses",
-      "statusNew": "New",
-      "statusInProgress": "In Progress",
-      "statusCompleted": "Completed",
-      "statusCancelled": "Cancelled",
-      "detailsTitle": "Inquiry Details",
-      "labelName": "Name",
-      "labelEmail": "Email",
-      "labelPhone": "Phone",
-      "labelService": "Service",
-      "labelMessage": "Message",
-      "labelDate": "Date",
-      "labelStatus": "Status",
-      "labelNotes": "Notes",
-      "closeBtn": "Close",
-      "deleteConfirm": "Are you sure you want to delete this inquiry?",
-      "errorLoad": "Failed to load inquiries",
-      "errorUpdate": "Failed to update status",
-      "errorDelete": "Failed to delete inquiry"
-    },
-    "servicesManager": {
-      "pageTitle": "Services Management",
-      "pageSubtitle": "Manage your service offers",
-      "loading": "Loading services...",
-      "addService": "Add Service",
-      "editService": "Edit Service",
-      "addNewService": "Add New Service",
-      "title": "Title",
-      "description": "Description",
-      "price": "Price",
-      "icon": "Icon",
-      "features": "Features (one per line)",
-      "save": "Save",
-      "saving": "Saving...",
-      "cancel": "Cancel",
-      "deleteConfirm": "Are you sure you want to delete this service?",
-      "errorLoading": "Failed to load services",
-      "errorSaving": "Failed to save service",
-      "errorDeleting": "Failed to delete service",
-      "errorToggle": "Failed to change service status",
-      "saveSuccess": "Service saved successfully",
-      "deleteSuccess": "Service deleted successfully",
-      "toggleSuccess": "Service status changed successfully",
-      "active": "Active",
-      "inactive": "Inactive",
-      "edit": "Edit",
-      "delete": "Delete",
-      "featuresLabel": "Features:",
-      "priceLabel": "Price:"
-    }
+  "admin_Login": {
+    "title": "Admin Login",
+    "subtitle": "Access the admin dashboard with your credentials",
+    "email": "Email",
+    "emailPlaceholder": "Enter your email",
+    "password": "Password",
+    "passwordPlaceholder": "Enter your password",
+    "login": "Login",
+    "loggingIn": "Logging in...",
+    "invalidCredentials": "Invalid email or password",
+    "loginFailed": "Login failed. Please try again.",
+    "loading": "Loading...",
+    "back": "Back to Home",
+    "demo": "Use your admin credentials to log in."
+  }
+
+
+
+
+
 }

@@ -1,131 +1,195 @@
-import React, { useState, useEffect } from 'react';
-import { Car, Truck, Users, Building, Clock, Shield } from 'lucide-react';
-import { serviceService } from '../services/serviceService';
-import { useNavigate } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import axios from "axios";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 const Services = () => {
+  const API_BASE_URL = "https://api.drisavo.ca/api/api/v1";
   const [services, setServices] = useState([]);
   const [loading, setLoading] = useState(true);
-  const navigate = useNavigate();
-  const { t } = useTranslation();
+  const [error, setError] = useState("");
+
+  // Default service
+  const defaultService = {
+    id: "default",
+    title: "Default Service",
+    category: "bde",
+    description: "This is a default service displayed when fetching services from the API fails.",
+    price: "100",
+    original_price: "150",
+    features: [
+      "Feature 1: Full support.",
+      "Feature 2: High quality.",
+      "Feature 3: Available around the clock.",
+    ],
+  };
 
   useEffect(() => {
-    loadServices();
+    const fetchServices = async () => {
+      try {
+        setLoading(true);
+        const res = await axios.get(`${API_BASE_URL}/services`, {
+          headers: {
+            Authorization: `Bearer ${localStorage.getItem("auth_token")}`,
+            "Content-Type": "application/json",
+          },
+        });
+        console.log("API Response:", res.data);
+        const dataArray = Array.isArray(res.data.data) ? res.data.data : [];
+        setServices(dataArray.length ? dataArray : [defaultService]);
+      } catch (err) {
+        console.error("Failed to load services", err);
+        setError("Failed to fetch services: " + err.message);
+        toast.error("Failed to fetch services: " + err.message);
+        setServices([defaultService]);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchServices();
   }, []);
 
-  const loadServices = async () => {
-    try {
-      const data = await serviceService.getServices();
-      setServices(data);
-    } catch (error) {
-      console.error('Error loading services:', error);
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  const getIcon = (iconName) => {
-    const icons = {
-      car: Car,
-      truck: Truck,
-      users: Users,
-      building: Building
-    };
-    return icons[iconName] || Car;
-  };
+  // Function to filter services by category
+  const byCategory = (cat) => services.filter((s) => s.category === cat);
 
   if (loading) {
     return (
-      <section id="services" className="services">
-        <div className="services-container">
-          <div className="section-header">
-            <h2 className="section-title">{t('servicessec.loading')}</h2>
-          </div>
+      <div className="services-section">
+        <Header />
+        <div className="container">
+          <p>Loading...</p>
         </div>
-      </section>
+        <Footer />
+      </div>
     );
   }
 
   return (
-    <section id="services" className="services">
-      <div className="services-container">
-        <div className="section-header">
-          <h2 className="section-title">
-            {t('servicessec.title')}
-          </h2>
-          <p className="section-subtitle">
-            {t('servicessec.subtitle')}
-          </p>
-        </div>
+    <>
+      <Header />
+      <section className="services-section">
+        <div className="container">
+          {error && <p className="error-text">{error}</p>}
 
-        <div className="services-grid">
-          {services.map((service) => {
-            const IconComponent = getIcon(service.icon);
-            return (
-              <div key={service.id} className="service-card">
-                <div className="service-icon">
-                  <IconComponent size={32} color="#1e40af" />
+          {/* BDE Program - All services appear here */}
+          {services.length > 0 ? (
+            services.map((s) => (
+              <div key={s.id} className="bde-container" id="bde">
+                <div className="bde-description">
+                  <h2 className="service-title">{s.title}</h2>
+                  <p className="service-desc">{s.description}</p>
                 </div>
-                <h3 className="service-title">
-                  {service.title}
-                </h3>
-                <p className="service-description">
-                  {service.description}
-                </p>
-                <ul className="service-features">
-                  {service.features && service.features.map((feature, idx) => (
-                    <li key={idx}>
-                      <Shield size={16} color="#10b981" />
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
-                <p className="service-price">{service.price}</p>
-                <button
-                  className="service-button"
-                  onClick={() => {
-                    const contactSection = document.getElementById('contact');
-                    if (contactSection) {
-                      contactSection.scrollIntoView({ behavior: 'smooth' });
-                    }
-                  }}
-                >
-                  {t('servicessec.button')}
-                </button>
+                <div className="bde-card">
+                  {s.price && (
+                    <div className="card-pricing">
+                      {s.original_price && (
+                        <span className="original-price">
+                          {s.original_price}
+                        </span>
+                      )}
+                      <span className="current-price">{s.price}</span>
+                    </div>
+                  )}
+                  {s.features && s.features.length > 0 && (
+                    <>
+                      <h4 className="included-title">Included:</h4>
+                      <ul className="inclusions-list">
+                        {s.features.map((f, i) => (
+                          <li key={i} dangerouslySetInnerHTML={{ __html: f }} />
+                        ))}
+                      </ul>
+                    </>
+                  )}
+                  <Link to="/payment-page" className="enroll-btn">
+                    Enroll Now
+                  </Link>
+                </div>
               </div>
-            );
-          })}
-        </div>
+            ))
+          ) : (
+            <p>No services available at the moment.</p>
+          )}
 
-        <div className="services-cta">
-          <h3>{t('servicessec.whyUs')}</h3>
-          <div className="cta-features">
-            <div className="cta-feature">
-              <Clock size={32} color="#06b6d4" />
-              <div>
-                <h4>{t('servicessec.features.0.title')}</h4>
-                <p>{t('servicessec.features.0.desc')}</p>
+          {/* Private Lessons */}
+          {byCategory("private").length > 0 ? (
+            byCategory("private").map((s) => (
+              <div key={s.id} className="service-block" id="private">
+                <h3 className="service-heading">{s.title}</h3>
+                <p className="service-desc">{s.description}</p>
+                <Link to="/payment-page" className="enroll-btn">
+                  Enroll Now
+                </Link>
+                {s.features && s.features.length > 0 ? (
+                  <div className="plans-grid">
+                    {s.features.map((plan, idx) => (
+                      <div className="plan-card" key={idx}>
+                        <h4>{plan}</h4>
+                      </div>
+                    ))}
+                  </div>
+                ) : (
+                  <p>No plans available.</p>
+                )}
               </div>
-            </div>
-            <div className="cta-feature">
-              <Shield size={32} color="#10b981" />
-              <div>
-                <h4>{t('servicessec.features.1.title')}</h4>
-                <p>{t('servicessec.features.1.desc')}</p>
+            ))
+          ) : (
+            <p>No private lessons available.</p>
+          )}
+
+          {/* Road Test */}
+          {byCategory("roadtest").length > 0 ? (
+            byCategory("roadtest").map((s) => (
+              <div key={s.id} className="service-block" id="roadtest">
+                <h3 className="service-heading">{s.title}</h3>
+                {s.features && s.features.length > 0 ? (
+                  <div className="plans-grid">
+                    {s.features.map((plan, idx) => (
+                      <div className="plan-card" key={idx}>
+                        <h4>{plan}</h4>
+                      </div>
+                    ))}
+                  </div>
+                ) : (
+                  <p>No plans available.</p>
+                )}
               </div>
-            </div>
-            <div className="cta-feature">
-              <Users size={32} color="#ea580c" />
-              <div>
-                <h4>{t('servicessec.features.2.title')}</h4>
-                <p>{t('servicessec.features.2.desc')}</p>
+            ))
+          ) : (
+            <p>No Road Test services available.</p>
+          )}
+
+          {/* FAQs */}
+          {byCategory("faq").length > 0 ? (
+            byCategory("faq").map((s) => (
+              <div key={s.id} className="service-block faq-block">
+                <h3 className="service-heading">{s.title}</h3>
+                {s.features && s.features.length > 0 ? (
+                  s.features.map((qa, idx) => {
+                    const [q, a] = qa.split("|");
+                    return (
+                      <div key={idx} className="faq-item">
+                        <h4>{q}</h4>
+                        <p>{a}</p>
+                      </div>
+                    );
+                  })
+                ) : (
+                  <p>No FAQs available.</p>
+                )}
               </div>
-            </div>
-          </div>
+            ))
+          ) : (
+            <p>No FAQs available.</p>
+          )}
         </div>
-      </div>
-    </section>
+      </section>
+      <Footer />
+      <ToastContainer />
+    </>
   );
 };
 

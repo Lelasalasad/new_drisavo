@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Eye, Trash2, Filter, Search, RefreshCw } from 'lucide-react';
 import { inquiryService } from '../../services/inquiryService';
 import { useTranslation } from 'react-i18next';
+/*by lelas alasad*/
 
 const InquiriesManager = () => {
   const { t } = useTranslation();

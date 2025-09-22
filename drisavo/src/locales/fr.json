@@ -1,250 +1,331 @@
 {
   "home": "Accueil",
-  "services": "Services",
-  "about": "À propos",
-  "contact": "Contact",
+  "Services": "Services",
+  "Cities": "Villes",
+  "Certificated-Instructors": "Instructeurs Certifiés",
+  "Company that Innovates": "Entreprise Innovante",
   "dashboard": "Tableau de bord",
   "logout": "Déconnexion",
   "adminLogin": "Connexion Admin",
-  "aboutSection": {
-    "title": "À propos de Drisavo",
-    "p1": "Fondée en 2013, Drisavo est à la pointe des services de conduite professionnelle, offrant des solutions de transport sûres, fiables et haut de gamme aux particuliers et aux entreprises.",
-    "p2": "Notre équipe de professionnels certifiés est engagée dans l’excellence, garantissant que chaque voyage soit confortable, sécurisé et ponctuel. Nous sommes fiers de bâtir des relations durables avec nos clients grâce à un service exceptionnel.",
-    "features": {
-      "licensed": "Chauffeurs professionnels agréés et assurés",
-      "modernFleet": "Flotte de véhicules moderne et bien entretenue",
-      "support247": "Support client et assistance d'urgence 24/7",
-      "backgroundCheck": "Vérifications approfondies pour tous les chauffeurs"
+  "enrollNow": "Inscrivez-vous maintenant",
+  
+  "hero": {
+    "loading": "Chargement du contenu...",
+    "loadFail": "Échec du chargement du contenu. Veuillez réessayer plus tard.",
+    "title1": "Apprenez à conduire",
+    "title1Line2": "en toute confiance",
+    "subtitle1": "Rejoignez des milliers de conducteurs ayant réussi grâce à nos cours dirigés par des experts, adaptés à tous les niveaux.",
+    "title2": "Maîtrisez la route",
+    "title2Line2": "avec Drisavo",
+    "subtitle2": "Formation flexible et professionnelle pour vous aider à réussir votre examen de conduite facilement.",
+    "enroll": "Inscrivez-vous maintenant",
+    "howItWorks": "Comment ça marche",
+    "happyCustomers": "Clients satisfaits",
+    "rating": "Note moyenne",
+    "newsworthyTitle": "Comme vu sur",
+    "servicesBtn": "Nos services",
+    "servicesTitle": "Cours de conduite adaptés à tous",
+    "servicesInstruction": "Découvrez nos cours de conduite complets conçus pour répondre à vos besoins.",
+    "learnMore": "En savoir plus",
+    "specialOffersTitle": "Offres spéciales",
+    "noDetails": "Aucun détail disponible",
+    "reviewsBtn": "Avis des clients",
+    "reviewsTitle": "Ce que disent nos élèves",
+    "offers": {
+      "beginnerPackage": {
+        "title": "Forfait d’apprentissage pour débutants",
+        "details": [
+          "10 heures de leçons en voiture",
+          "20 heures de théorie en ligne",
+          "Ramassage et dépôt gratuits"
+        ]
+      },
+      
+      "refresherLessons": {
+        "title": "Leçons de conduite de perfectionnement",
+        "details": [
+          "5 heures de leçons en voiture",
+          "Planification flexible",
+          "Instructeurs professionnels"
+        ]
+      }
     },
-    "badge": "Années d’excellence",
-    "stats": {
-      "experience": "Années d'expérience",
-      "clients": "Clients satisfaits",
-      "drivers": "Chauffeurs professionnels",
-      "support": "Support disponible"
+    "reviews": {
+      "review1": {
+        "text": "École de conduite incroyable ! Les instructeurs sont patients et professionnels.",
+        "author": "John Doe",
+        "date": "Janvier 2025"
+      },
+      "review2": {
+        "text": "J’ai réussi mon examen de conduite du premier coup grâce à Drisavo !",
+        "author": "Sarah Smith",
+        "date": "Février 2025"
+      }
     }
   },
- "contactsec": {
-  "title": "Contactez-nous",
-  "subtitle": "Prêt à découvrir des services de conduite haut de gamme ? Contactez-nous dès aujourd'hui pour un devis personnalisé ou pour planifier votre prochain trajet.",
-  "infoTitle": "Informations de contact",
-  "phone": "Téléphone",
-  "email": "E-mail",
-  "address": "Adresse",
-  "hours": "Heures d'ouverture",
-  "24_7": "Disponible 24/7",
-  "emergency": "Service d'urgence",
-  "emergencyDesc": "Besoin d'aide immédiate ? Notre hotline d'urgence est disponible 24h/24.",
-  "formTitle": "Envoyez-nous un message",
+  "drisavoWorks": {
+    "title": "Drisavo est votre partenaire de confiance pour les services professionnels de conduite et de transport.",
+    "subtitle": "Réservez un chauffeur ou planifiez un service en 4 étapes simples :",
+    "step1": "Inscrivez-vous et créez votre profil.",
+    "step2": "Choisissez le type de service dont vous avez besoin.",
+    "step3": "Sélectionnez un forfait ou un plan personnalisé.",
+    "step4": "Confirmez votre réservation et nous serons en route vers vous !"
+  }
+,    
+"signup": {
+  "title": "Créer un compte",
   "name": "Nom complet",
-  "service": "Type de service",
-  "message": "Message",
-  "messagePlaceholder": "Veuillez décrire vos besoins...",
-  "chooseService": "Choisir un service",
-  "send": "Envoyer le message",
-  "sending": "Envoi...",
-  "success": "Votre demande a été envoyée avec succès ! Nous vous contacterons bientôt.",
-  "sendError": "Une erreur est survenue lors de l'envoi de votre demande.",
-  "loadError": "Échec du chargement des données."
+  "email": "Adresse e-mail",
+  "password": "Mot de passe",
+  "confirmPassword": "Confirmer le mot de passe",
+  "selectGender": "Sélectionner le sexe",
+  "male": "Homme",
+  "female": "Femme",
+  "phone": "Numéro de téléphone",
+  "birthday": "Date de naissance",
+  "location": "Emplacement",
+  "button": "S'inscrire",
+  "passwordMismatch": "Les mots de passe ne correspondent pas",
+  "success": "Inscription réussie ! Veuillez vérifier votre e-mail.",
+  "failed": "Échec de l'inscription. Veuillez réessayer.",
+  "error": "Une erreur s'est produite lors de l'inscription."
 }
 ,
+"login": {
+  "title": "Bienvenue à nouveau",
+  "subtitle": "Connectez-vous à votre compte pour continuer",
+  "email": "Adresse e-mail",
+  "password": "Mot de passe",
+  "button": "Se connecter",
+  "noAccount": "Vous n'avez pas de compte ?",
+  "signupLink": "S'inscrire",
+  "success": "Connexion réussie ! Redirection...",
+  "failed": "Échec de la connexion. Veuillez réessayer.",
+  "error": "Une erreur s'est produite lors de la connexion.",
+  "alreadyAccount":"Vous avez déjà un compte ?",
+  "loginLink":"Connexion"
+
+
+}
+,
+"verify": {
+  "title": "Vérifier le compte",
+  "placeholder": "Code de vérification",
+  "button": "Vérifier",
+  "success": "Compte vérifié",
+  "failed": "Code de vérification invalide",
+  "error": "Erreur de vérification",
+  "sentTo": "Nous avons envoyé un code à",
+  "enterBelow": "Entrez-le ci-dessous.",
+  "submitting": "Vérification...",
+  "enterCode": "Veuillez entrer le code de vérification",
+  "noEmail": "Aucun e-mail fourni",
+  "didntReceive": "Vous n'avez pas reçu le code ? Vérifiez votre dossier de spam ou l'adresse e-mail."
+},   "packages": "Forfaits",
+"choosePackage": "Choisissez un forfait adapté",
+"failedLoadPackages": "Échec du chargement des forfaits",
+"pleaseLoginOrSignup": "Veuillez vous connecter ou créer un compte pour voir les forfaits disponibles.",
+"haveCode": "Vous avez un code de vérification ?",
+"loggedIn": "Connecté",
+"loadingPackages": "Chargement des forfaits...",
+"noPackages": "Aucun forfait disponible",
+"price": "Prix",
+"hours": "Heures",
+"dates": "Dates",
+"total": "Total",
+"bookLesson": "Réserver / Payer",
+"createAccount": "Créer un compte",
+"mustLogin": "Vous devez d'abord vous connecter",
+"selectPackage": "Veuillez sélectionner un forfait",
+"proceedStripe": "Redirection vers le paiement...",
+"loggedOut": "Vous êtes déconnecté",
+  "payment": {
+    "formTitle": "Inscription / Réserver une leçon",
+    "formSubtitle": "Choisissez un forfait et entrez les informations de l'élève",
+    "studentNameLabel": "Nom de l'élève*",
+    "firstNamePlaceholder": "Prénom",
+    "lastNamePlaceholder": "Nom de famille",
+    "studentEmailLabel": "Email de l'élève*",
+    "emailPlaceholder": "email@example.com",
+    "studentPhoneLabel": "Téléphone de l'élève*",
+    "phonePlaceholder": "+1...",
+    "availablePackagesLabel": "Forfaits disponibles",
+    "noPackages": "Aucun forfait disponible pour le moment.",
+    "totalLabel": "Total",
+    "bookLesson": "Réserver la leçon",
+    "processing": "En cours de traitement...",
+    "successMessage": "Réservation effectuée avec succès !",
+    "errorMessages": {
+      "fetchServicesFailed": "Échec de la récupération des forfaits depuis le serveur.",
+      "missingFields": "Veuillez remplir tous les champs et sélectionner un forfait.",
+      "loginRequired": "Vous devez d'abord vous connecter pour finaliser la réservation.",
+      "invalidPackage": "Veuillez sélectionner un forfait valide.",
+      "bookingFailed": "Échec de l'envoi de la demande de réservation : "
+    }
+  },
+  
   "footer": {
-    "description": "Services de conduite professionnels en qui vous pouvez avoir confiance. Sûr, fiable et toujours à l'heure.",
-    "services": "Services",
-    "personalDriver": "Chauffeur personnel",
-    "commercialTransport": "Transport commercial",
-    "groupTransportation": "Transport de groupe",
-    "corporateServices": "Services aux entreprises",
-    "quickLinks": "Liens rapides",
-    "aboutUs": "À propos de nous",
-    "ourTeam": "Notre équipe",
-    "careers": "Carrières",
-    "privacyPolicy": "Politique de confidentialité",
-    "contactInfo": "Infos de contact",
-    "phone": "0981459712",
-    "email": "lelasalasad0@gmail.com",
-    "address": "Syrie, Damas, Al-Medan",
-    "rights": "Tous droits réservés."
-  },
-  "hero": {
-    "title1": "Solutions",
-    "title2": "de Conduite Professionnelle",
-    "title3": "en Qui Vous Pouvez Avoir Confiance",
-    "subtitle": "Découvrez des services de conduite premium avec nos professionnels certifiés. Sûrs, fiables et toujours à l'heure - telle est la promesse de Drisavo.",
-    "getStarted": "Commencez aujourd'hui",
-    "ourServices": "Nos Services",
-    "feature1": {
-      "title": "100% Assuré",
-      "desc": "Protection complète"
+    "Navigation": "Navigation",
+    "ServicesSection": "Services",
+    "CompanySection": "Entreprise",
+    "companyDescription": "Des certificats d'éducation à la conduite pour débutants (BDE) à la mise en relation des étudiants avec des instructeurs certifiés MTO locaux, Drisavo évolue vers une plateforme de solutions de mobilité complètes.",
+    "services": {
+      "bde": "Programme BDE",
+      "private": "Leçon privée",
+      "roadtest": "Test de conduite"
     },
-    "feature2": {
-      "title": "Disponible 24/7",
-      "desc": "Service continu"
+    "company": {
+      "privacy": "Politique de confidentialité",
+      "about": "À propos de nous",
+      "careers": "Carrières",
+      "team": "Notre équipe"
     },
-    "feature3": {
-      "title": "Équipe d'experts",
-      "desc": "Professionnels certifiés"
-    }
+    "copyright": "© {year} Drisavo. Tous droits réservés."
   },
-   "servicessec": {
+  
+  "servicesManager": {
+    "pageTitle": "Gérer les services",
+    "pageSubtitle": "Créer, modifier ou supprimer des services d'auto-école.",
     "loading": "Chargement des services...",
-    "title": "Nos Services Professionnels",
-    "subtitle": "Choisissez parmi notre gamme complète de services de conduite, chacun conçu pour répondre à vos besoins de transport.",
-    "button": "Inscrivez-vous maintenant",
-    "whyUs": "Pourquoi choisir Drisavo ?",
-    "features": [
-      {
-        "title": "Toujours à l'heure",
-        "desc": "Service précis et fiable"
-      },
-      {
-        "title": "Entièrement assuré",
-        "desc": "Couverture de protection complète"
-      },
-      {
-        "title": "Chauffeurs experts",
-        "desc": "Professionnels certifiés"
-      }
-    ]
-  },
-  "admin_Login": {
-    "loading": "Chargement...",
-    "title": "Drisavo - Panneau Admin",
-    "subtitle": "Veuillez vous connecter pour accéder au tableau de bord",
-    "email": "Email",
-    "emailPlaceholder": "admin@drisavo.com",
-    "password": "Mot de passe",
-    "passwordPlaceholder": "Entrez votre mot de passe",
-    "login": "Se connecter",
-    "loggingIn": "Connexion...",
-    "invalidCredentials": "Identifiants invalides",
-    "loginFailed": "Échec de la connexion. Veuillez réessayer.",
-    "back": "Retour",
-    "demo": "Identifiants de démonstration: admin@drisavo.com / admin123"
-  },
-  "adminHeader": {
-    "adminUser": "Administrateur",
-    "logout": "Se déconnecter"
-  }
-,"adminSidebar": {
-    "title": "Administration Drisavo",
-    "dashboard": "Tableau de bord",
-    "services": "Services",
-    "inquiries": "Demandes",
-    "content": "Contenu"
-  },
-  "contentManager": {
-    "title": "Gestion de contenu",
-    "subtitle": "Gérez facilement le contenu du site",
-    "loading": "Chargement du contenu...",
-    "refresh": "Actualiser",
-    "updateSuccess": "Contenu mis à jour avec succès !",
-    "loadError": "Échec du chargement du contenu",
-    "loadFail": "Échec du chargement du contenu. Veuillez réessayer.",
-    "saveFail": "Échec de l'enregistrement du contenu. Veuillez réessayer.",
-    "editTitle": "Modifier le contenu",
-    "fields": {
-      "title": "Titre",
-      "content": "Contenu",
-      "type": "Type",
-      "active": "Actif"
-    },
-    "types": {
-      "text": "Texte",
-      "html": "HTML",
-      "image": "URL de l'image",
-      "json": "JSON"
-    },
-    "saveChanges": "Enregistrer les modifications",
+    "addService": "Ajouter un nouveau service",
+    "editService": "Modifier le service",
+    "addNewService": "Ajouter un nouveau service",
+    "title": "Titre du service",
+    "description": "Description",
+    "price": "Prix",
+    "originalPrice": "Prix original",
+    "category": "Catégorie",
+    "features": "Caractéristiques",
+    "featuresPlaceholder": "Entrez une caractéristique par ligne",
+    "icon": "Icône",
+    "active": "Actif",
+    "inactive": "Inactif",
+    "cancel": "Annuler",
+    "save": "Enregistrer",
     "saving": "Enregistrement...",
-    "cancel": "Annuler"
+    "edit": "Modifier",
+    "delete": "Supprimer",
+    "priceLabel": "Prix :",
+    "featuresLabel": "Caractéristiques :",
+    "saveSuccess": "Service enregistré avec succès !",
+    "deleteSuccess": "Service supprimé avec succès !",
+    "toggleSuccess": "État du service mis à jour avec succès !",
+    "errorLoading": "Échec du chargement des services.",
+    "errorSaving": "Échec de l'enregistrement du service.",
+    "errorDeleting": "Échec de la suppression du service.",
+    "errorToggle": "Échec de la mise à jour de l'état du service.",
+    "deleteConfirm": "Êtes-vous sûr de vouloir supprimer ce service ?",
+    "categoryRequired": "La catégorie est requise",
+    "titleRequired": "Le titre est requis",
+    "priceRequired": "Le prix est requis"
   },
-  "dashboardh": {
-    "title": "Tableau de bord",
-    "loadingData": "Chargement des données...",
-    "welcome": "Bienvenue ! Voici ce qui se passe dans votre entreprise.",
-    "totalInquiries": "Total des demandes",
-    "activeServices": "Services actifs",
-    "monthlyGrowth": "Croissance mensuelle",
-    "satisfiedClients": "Clients satisfaits",
-    "recentInquiries": "Demandes récentes",
-    "generalService": "Service général",
-    "statusNew": "Nouveau",
-    "statusInProgress": "En cours",
-    "statusCompleted": "Terminé",
-    "noRecentInquiries": "Aucune demande récente",
-    "quickActions": "Actions rapides",
-    "viewAllInquiries": "Voir toutes les demandes",
-    "manageServices": "Gérer les services",
-    "updateContent": "Mettre à jour le contenu",
-    "detailedStats": "Statistiques détaillées",
-    "newInquiries": "Nouvelles demandes",
-    "inProgress": "En cours",
-    "completed": "Terminées",
-    "today": "Aujourd'hui",
-    "loadError": "Échec du chargement des données du tableau de bord."
-  },
-   "inquiriesManager": {
-      "pageTitle": "Gestion des demandes",
-      "pageSubtitle": "Gérer les demandes et requêtes des clients",
-      "refresh": "Rafraîchir",
-      "loading": "Chargement des demandes...",
-      "noInquiries": "Aucune demande trouvée",
-      "contactInfo": "Informations de contact",
-      "service": "Service",
+  
+  "services": {
+    "loading": "Chargement...",
+    "noServices": "Aucun service disponible pour le moment.",
+    "noPrivateLessons": "Aucune leçon privée disponible.",
+    "noRoadTest": "Aucun service de test de conduite disponible.",
+    "noFAQs": "Aucune FAQ disponible.",
+    "noPlans": "Aucun plan disponible.",
+    "includedTitle": "Inclus :",
+    "errorFetch": "Échec de la récupération des services : ",
+    "defaultService": {
+      "title": "Service par défaut",
+      "description": "Ceci est un service par défaut affiché en cas d'échec de la récupération des services depuis l'API.",
+      "features": [
+        "Caractéristique 1 : Support complet.",
+        "Caractéristique 2 : Haute qualité.",
+        "Caractéristique 3 : Disponible 24/7."
+      ]
+    }
+  }
+,
+
+  "cities": {
+    "loading": "Chargement des villes...",
+    "citiesTitle": "Villes",
+    "emailLabel": "E-mail : ",
+    "phoneLabel": "Téléphone : ",
+    "mapLabel": "Carte : ",
+    "viewFullMap": "Voir la carte complète",
+    "noMapLink": "Aucun lien de carte disponible",
+    "detailsTitle": "Détails",
+    "quickInfoTitle": "Informations rapides",
+    "quickInfo": {
+      "touristAttractions": "Attractions touristiques",
+      "drivingSchools": "Écoles de conduite",
+      "publicTransport": "Transports publics"
+    },
+    "errorFetch": "Échec de la récupération des villes : ",
+    "defaultCity": {
+      "name": "Damas",
+      "description": "Une ville par défaut pour les tests — une brève description de la ville.",
+      "details": "Détails supplémentaires sur la ville par défaut : sites touristiques, écoles et informations générales pour les tests.",
+      "email": "info@damascus.example",
+      "phone": "+963-11-0000000",
+      "map_link": "https://www.google.com/maps",
+      "noImageText": "Aucune image"
+    }
+  }
+,
+
+  "instructorPage": {
+    "loading": "Chargement...",
+    "noInstructors": "Aucun instructeur accepté disponible.",
+    "certifiedInstructorsTitle": "Instructeurs certifiés",
+    "viewSchedule": "Voir les horaires",
+    "scheduleTableTitle": "Horaire de",
+    "tableHeaders": {
       "date": "Date",
-      "status": "Statut",
-      "actions": "Actions",
-      "searchPlaceholder": "Rechercher dans les demandes...",
-      "filterAll": "Tous les statuts",
-      "statusNew": "Nouveau",
-      "statusInProgress": "En cours",
-      "statusCompleted": "Terminé",
-      "statusCancelled": "Annulé",
-      "detailsTitle": "Détails de la demande",
-      "labelName": "Nom",
-      "labelEmail": "Email",
-      "labelPhone": "Téléphone",
-      "labelService": "Service",
-      "labelMessage": "Message",
-      "labelDate": "Date",
-      "labelStatus": "Statut",
-      "labelNotes": "Notes",
-      "closeBtn": "Fermer",
-      "deleteConfirm": "Êtes-vous sûr de vouloir supprimer cette demande ?",
-      "errorLoad": "Échec du chargement des demandes",
-      "errorUpdate": "Échec de la mise à jour du statut",
-      "errorDelete": "Échec de la suppression de la demande"
-    }
-  ,"servicesManager": {
-      "pageTitle": "Gestion des services",
-      "pageSubtitle": "Gérez vos offres de services",
-      "loading": "Chargement des services...",
-      "addService": "Ajouter un service",
-      "editService": "Modifier le service",
-      "addNewService": "Ajouter un nouveau service",
-      "title": "Titre",
-      "description": "Description",
-      "price": "Prix",
-      "icon": "Icône",
-      "features": "Caractéristiques (une par ligne)",
-      "save": "Enregistrer",
-      "saving": "Enregistrement...",
-      "cancel": "Annuler",
-      "deleteConfirm": "Êtes-vous sûr de vouloir supprimer ce service ?",
-      "errorLoading": "Échec du chargement des services",
-      "errorSaving": "Échec de l'enregistrement du service",
-      "errorDeleting": "Échec de la suppression du service",
-      "errorToggle": "Échec du changement du statut du service",
-      "saveSuccess": "Service enregistré avec succès",
-      "deleteSuccess": "Service supprimé avec succès",
-      "toggleSuccess": "Statut du service modifié avec succès",
-      "active": "Actif",
-      "inactive": "Inactif",
-      "edit": "Modifier",
-      "delete": "Supprimer",
-      "featuresLabel": "Caractéristiques :",
-      "priceLabel": "Prix :"
-    }
+      "from": "De",
+      "to": "À"
+    },
+    "errorLogin": "Échec de la connexion : Impossible d'obtenir le jeton",
+    "errorFetch": "Une erreur s'est produite : ",
+    "errorFetchSchedule": "Échec de la récupération de l'horaire de l'instructeur {id} : ",
+    "keyLabel": "Avantages clés",
+    "heading": "Avantages et bénéfices",
+    "benefits": [
+      {
+        "title": "Définissez votre emploi du temps",
+        "desc": "Flexibilité pour être votre propre patron et gérer votre temps."
+      },
+      {
+        "title": "Élargissez votre réseau",
+        "desc": "Interagissez avec des personnes diverses du monde entier."
+      },
+      {
+        "title": "Rémunération compétitive",
+        "desc": "Nous pouvons égaler les tarifs de n'importe quelle auto-école au Canada."
+      },
+      {
+        "title": "Gérez votre profil",
+        "desc": "Votre performance détermine votre attractivité pour les clients. Tout dépend de vous !"
+      },
+      {
+        "title": "Impact communautaire",
+        "desc": "Jouez un rôle clé dans la promotion de la sécurité routière et la réduction des accidents."
+      },
+      {
+        "title": "Apprentissage continu",
+        "desc": "Opportunités de rester affûté et à jour sur les règles et réglementations de sécurité."
+      }
+    ],
+    "documentsTitle": "Documents requis",
+    "documentsIntro": "Nos instructeurs de conduite en voiture certifiés par le MTO doivent télécharger les documents suivants sur l'application mobile. Suivez les étapes et téléchargez les documents requis !",
+    "documents": [
+      "Certification de conduite en voiture",
+      "Permis d'instructeur de conduite de l'Ontario valide (approuvé par le MTO)",
+      "Permis de conduire G",
+      "Assurance pour instructeur de conduite",
+      "Propriété du véhicule ; véhicule en bon état avec pédale de frein du côté passager.",
+      "Rapport d'inspection de sécurité des voitures de l'Ontario.",
+      "Images montrant une pédale de frein double pour l'instructeur, vue de face du véhicule de l'instructeur incluant la plaque d'immatriculation."
+    ]
+  }
+
+
+
+
 
 }

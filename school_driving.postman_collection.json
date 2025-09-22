@@ -1,0 +1,2014 @@
+{
+	"info": {
+		"_postman_id": "369e99a5-fb9d-4f4e-a986-c4229486da88",
+		"name": "school_driving",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33991932"
+	},
+	"item": [
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "createAdminAccount",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\":\"admin@gmail.com\",\n    \"password\":\"123456789\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{hostDomain}}/api/createAdminAccount",
+							"host": [
+								"{{hostDomain}}"
+							],
+							"path": [
+								"api",
+								"createAdminAccount"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAdminAccounts",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{hostDomain}}/api/getAdminAccounts",
+							"host": [
+								"{{hostDomain}}"
+							],
+							"path": [
+								"api",
+								"getAdminAccounts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteAdminAccount",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{localDomain}}/api/deleteAdminAccount/1",
+							"host": [
+								"{{localDomain}}"
+							],
+							"path": [
+								"api",
+								"deleteAdminAccount",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteAccount",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{hostDomain}}/api/deleteAccount/8",
+							"host": [
+								"{{hostDomain}}"
+							],
+							"path": [
+								"api",
+								"deleteAccount",
+								"8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "userSignUp",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "mahmoodbannan5@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456789",
+									"type": "text"
+								},
+								{
+									"key": "firebaseToken",
+									"value": "token",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "type",
+									"value": "student",
+									"type": "text"
+								},
+								{
+									"key": "fName",
+									"value": "mahmoud",
+									"type": "text"
+								},
+								{
+									"key": "lName",
+									"value": "bannan",
+									"type": "text"
+								},
+								{
+									"key": "longitude",
+									"value": "longitude",
+									"type": "text"
+								},
+								{
+									"key": "latitude",
+									"value": "latitude",
+									"type": "text"
+								},
+								{
+									"key": "drivingLicenseImage",
+									"description": "this is only for instructor",
+									"type": "file",
+									"src": "postman-cloud:///1f05b253-51d3-46f0-9d87-8eed6a348ae7"
+								},
+								{
+									"key": "carOwnershipImage",
+									"description": "this is only for instructor",
+									"type": "file",
+									"src": "postman-cloud:///1f05b253-51d3-46f0-9d87-8eed6a348ae7"
+								},
+								{
+									"key": "carImage",
+									"description": "this is only for instructor",
+									"type": "file",
+									"src": "postman-cloud:///1f05b253-51d3-46f0-9d87-8eed6a348ae7"
+								},
+								{
+									"key": "carTaamen",
+									"description": "this is only for instructor",
+									"type": "file",
+									"src": "postman-cloud:///1f05b253-51d3-46f0-9d87-8eed6a348ae7"
+								},
+								{
+									"key": "carInstructorGrade",
+									"description": "this is only for instructor",
+									"type": "file",
+									"src": "postman-cloud:///1f05b253-51d3-46f0-9d87-8eed6a348ae7"
+								},
+								{
+									"key": "carCheckImage",
+									"description": "this is only for instructor",
+									"type": "file",
+									"src": "postman-cloud:///1f05b253-51d3-46f0-9d87-8eed6a348ae7"
+								},
+								{
+									"key": "phoneNumber",
+									"value": "4445454544454",
+									"type": "text"
+								},
+								{
+									"key": "birthday",
+									"value": "2025-06-30 16:28:45",
+									"type": "text"
+								},
+								{
+									"key": "nextDriverBreaks",
+									"description": "this is only for instructor",
+									"type": "file",
+									"src": "postman-cloud:///1f05b253-51d3-46f0-9d87-8eed6a348ae7"
+								},
+								{
+									"key": "city",
+									"value": "aleppo",
+									"type": "text"
+								},
+								{
+									"key": "gender",
+									"value": "Male",
+									"type": "text"
+								},
+								{
+									"key": "isWearingCorrectiveLens",
+									"value": "0",
+									"description": "this is only for student",
+									"type": "text"
+								},
+								{
+									"key": "accommodation",
+									"value": "accommodation",
+									"description": "this is only for student",
+									"type": "text"
+								},
+								{
+									"key": "license",
+									"value": "license",
+									"description": "this is only for student",
+									"type": "text"
+								},
+								{
+									"key": "issuedDate",
+									"value": "2025-09-21 14:40:30",
+									"description": "this is only for student",
+									"type": "text"
+								},
+								{
+									"key": "expirationDate",
+									"value": "2025-09-21 14:40:30",
+									"description": "this is only for student",
+									"type": "text"
+								},
+								{
+									"key": "accommodationYouNeed",
+									"value": "accommodationYouNeed",
+									"description": "this is only for student",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{hostDomain}}/api/userSignUp",
+							"host": [
+								"{{hostDomain}}"
+							],
+							"path": [
+								"api",
+								"userSignUp"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\":\"mahmoodbannan5@gmail.com\",\n    \"password\":\"123456789\",\n    \"type\":\"instructor\",\n    \"firebaseToken\":\"firebaseToken\",\n    \"deviceId\":\"deviceId\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localDomain}}/api/login",
+							"host": [
+								"{{localDomain}}"
+							],
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "logout",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{localToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"deviceId\":\"deviceId\",\n    \"userId\":19\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localDomain}}/api/logout",
+							"host": [
+								"{{localDomain}}"
+							],
+							"path": [
+								"api",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "verifyCode",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\":\"mahmoodbannan5@gmail.com\",\n    \"code\":\"775402\",\n    \"firebaseToken\":\"fMns4DpvQbS9D_azamZ132:APA91bGyiiBIG7-KK9YXNXNkzww9SNGTQtM-yWdpE0_ka4y6WI_QImD4SzDQ_-n1e917nGvxreT3-WoHGULXl-8VQJmOp60zsYTZzeP12_MZBtjFRTaBuoI\",\n    \"deviceId\":\"1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{hostDomain}}/api/verifyCode",
+							"host": [
+								"{{hostDomain}}"
+							],
+							"path": [
+								"api",
+								"verifyCode"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "sendResetPasswordCode",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\":\"mahmoodbannan5@gmail.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{hostDomain}}/api/sendResetPasswordCode",
+							"host": [
+								"{{hostDomain}}"
+							],
+							"path": [
+								"api",
+								"sendResetPasswordCode"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "resetPassword",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\":\"mahmoodbannan5@gmail.com\",\n    \"code\":\"962082\",\n    \"newPassword\":\"newPassword\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{hostDomain}}/api/resetPassword",
+							"host": [
+								"{{hostDomain}}"
+							],
+							"path": [
+								"api",
+								"resetPassword"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "changeCity",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{localToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userId\":6,\n    \"city\":\"Aleppo\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localDomain}}/api/changeCity",
+							"host": [
+								"{{localDomain}}"
+							],
+							"path": [
+								"api",
+								"changeCity"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "manageUsers",
+			"item": [
+				{
+					"name": "getPendingInstructors",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{localToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\":\"user1@gmail.com\",\n    \"password\":\"123456789\",\n    \"type\":\"instructor\",\n    \"firebaseToken\":\"token\"\n}"
+						},
+						"url": {
+							"raw": "{{localDomain}}/api/getPendingInstructors",
+							"host": [
+								"{{localDomain}}"
+							],
+							"path": [
+								"api",
+								"getPendingInstructors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "acceptInstructor",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{localToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{localDomain}}/api/acceptInstructor/2",
+							"host": [
+								"{{localDomain}}"
+							],
+							"path": [
+								"api",
+								"acceptInstructor",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAcceptedInstructors",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{localToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{localDomain}}/api/getAcceptedInstructors",
+							"host": [
+								"{{localDomain}}"
+							],
+							"path": [
+								"api",
+								"getAcceptedInstructors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "rejectInstructor",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{localToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{localDomain}}/api/rejectInstructor/2",
+							"host": [
+								"{{localDomain}}"
+							],
+							"path": [
+								"api",
+								"rejectInstructor",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getRejectedInstructors",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{localToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{localDomain}}/api/getRejectedInstructors",
+							"host": [
+								"{{localDomain}}"
+							],
+							"path": [
+								"api",
+								"getRejectedInstructors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "stopUser",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{hostDomain}}/api/stopUser/1",
+							"host": [
+								"{{hostDomain}}"
+							],
+							"path": [
+								"api",
+								"stopUser",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "returnUser",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{hostDomain}}/api/returnUser/1",
+							"host": [
+								"{{hostDomain}}"
+							],
+							"path": [
+								"api",
+								"returnUser",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getStoppedInstructors",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{hostDomain}}/api/getStoppedInstructors",
+							"host": [
+								"{{hostDomain}}"
+							],
+							"path": [
+								"api",
+								"getStoppedInstructors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getStoppedStudents",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{hostDomain}}/api/getStoppedStudents",
+							"host": [
+								"{{hostDomain}}"
+							],
+							"path": [
+								"api",
+								"getStoppedStudents"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getInstructorStatus",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{hostDomain}}/api/getInstructorStatus/3",
+							"host": [
+								"{{hostDomain}}"
+							],
+							"path": [
+								"api",
+								"getInstructorStatus",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllStudents",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{localToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"instructorId\":2,\n    \"requestId\":2\n}"
+						},
+						"url": {
+							"raw": "{{hostDomain}}/api/getAllStudents",
+							"host": [
+								"{{hostDomain}}"
+							],
+							"path": [
+								"api",
+								"getAllStudents"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllInstructors",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"instructorId\":2,\n    \"requestId\":2\n}"
+						},
+						"url": {
+							"raw": "{{hostDomain}}/api/getAllInstructors",
+							"host": [
+								"{{hostDomain}}"
+							],
+							"path": [
+								"api",
+								"getAllInstructors"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "teacherDates",
+			"item": [
+				{
+					"name": "addInstructorDate",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{localToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"instructorId\":2,\n    \"date\":\"2025-10-20\",\n    \"fromTime\":\"19:00\",\n    \"toTime\":\"20:10\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localDomain}}/api/addInstructorDate",
+							"host": [
+								"{{localDomain}}"
+							],
+							"path": [
+								"api",
+								"addInstructorDate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getInstructorDates",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{localToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{localDomain}}/api/getInstructorDates/2",
+							"host": [
+								"{{localDomain}}"
+							],
+							"path": [
+								"api",
+								"getInstructorDates",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteInstructorDate",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{localToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"instructorId\":1,\n    \"date\":\"2024-11-11\",\n    \"fromTime\":\"10:10\",\n    \"toTime\":\"11:10\"\n}"
+						},
+						"url": {
+							"raw": "{{localDomain}}/api/deleteInstructorDate/23",
+							"host": [
+								"{{localDomain}}"
+							],
+							"path": [
+								"api",
+								"deleteInstructorDate",
+								"23"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getInstructorPendingRequestsDate",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{localToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{localDomain}}/api/getInstructorPendingRequestsDate/2",
+							"host": [
+								"{{localDomain}}"
+							],
+							"path": [
+								"api",
+								"getInstructorPendingRequestsDate",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "rejectStudentRequest",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{localToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"instructorId\":2,\n    \"requestId\":1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localDomain}}/api/rejectStudentRequest",
+							"host": [
+								"{{localDomain}}"
+							],
+							"path": [
+								"api",
+								"rejectStudentRequest"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "acceptStudentRequestDate",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{localToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"instructorId\":2,\n    \"requestId\":1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localDomain}}/api/acceptStudentRequestDate",
+							"host": [
+								"{{localDomain}}"
+							],
+							"path": [
+								"api",
+								"acceptStudentRequestDate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAcceptedInstructorRequest",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{localToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{localDomain}}/api/getAcceptedInstructorRequest/2",
+							"host": [
+								"{{localDomain}}"
+							],
+							"path": [
+								"api",
+								"getAcceptedInstructorRequest",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getPastAcceptedInstructorRequest",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{hostDomain}}/api/getPastAcceptedInstructorRequest/2",
+							"host": [
+								"{{hostDomain}}"
+							],
+							"path": [
+								"api",
+								"getPastAcceptedInstructorRequest",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "doneRequest",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{localToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"instructorId\":2,\n    \"requestId\":1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localDomain}}/api/doneRequest",
+							"host": [
+								"{{localDomain}}"
+							],
+							"path": [
+								"api",
+								"doneRequest"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getExcusedInstructorDates",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{hostDomain}}/api/getExcusedInstructorDates/2",
+							"host": [
+								"{{hostDomain}}"
+							],
+							"path": [
+								"api",
+								"getExcusedInstructorDates",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getDoneInstructorRequest",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{hostDomain}}/api/getDoneInstructorRequest/2",
+							"host": [
+								"{{hostDomain}}"
+							],
+							"path": [
+								"api",
+								"getDoneInstructorRequest",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "chat",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{localToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"instructorId\":2,\n    \"message\":\"message\",\n    \"studentId\":7,\n    \"isFromStudent\":false\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localDomain}}/api/chat",
+							"host": [
+								"{{localDomain}}"
+							],
+							"path": [
+								"api",
+								"chat"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getChat",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{localToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"instructorId\":2,\n    \"studentId\":7\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localDomain}}/api/getChat",
+							"host": [
+								"{{localDomain}}"
+							],
+							"path": [
+								"api",
+								"getChat"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "rate",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{localToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"instructorId\":2,\n    \"comment\":\"message\",\n    \"rate\":5,\n    \"studentId\":6,\n    \"isStudent\":false\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localDomain}}/api/rate",
+							"host": [
+								"{{localDomain}}"
+							],
+							"path": [
+								"api",
+								"rate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getInstructorRates",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"instructorId\":1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{hostDomain}}/api/getInstructorRates",
+							"host": [
+								"{{hostDomain}}"
+							],
+							"path": [
+								"api",
+								"getInstructorRates"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "excuseDate",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{localToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userId\":2,\n    \"isStudent\":false,\n    \"dateId\":1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localDomain}}/api/excuseDate",
+							"host": [
+								"{{localDomain}}"
+							],
+							"path": [
+								"api",
+								"excuseDate"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "packages",
+			"item": [
+				{
+					"name": "getPackages",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{localToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{localDomain}}/api/getPackages/Aleppo",
+							"host": [
+								"{{localDomain}}"
+							],
+							"path": [
+								"api",
+								"getPackages",
+								"Aleppo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addPackage",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{localToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"enName\":\"fffnedew package\",\n    \"frName\":\"ffderffName\",\n    \"behindTheWheelHourCount\":10,\n    \"courseHourCount\":5,\n    \"isOnline\":false,\n    \"enDescription\":\"enDescription\",\n    \"frDescription\":\"frDescription\",\n    \"price\":10,\n    \"city\":\"Aleppo\",\n    \"dates\":[\n        {   \n        \"firstDate\":\"2024-11-11\",\n        \"secondDate\":\"2024-11-12\",\n        \"fromTime\":\"10:15\",\n        \"toTime\":\"12:15\"\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localDomain}}/api/addPackage",
+							"host": [
+								"{{localDomain}}"
+							],
+							"path": [
+								"api",
+								"addPackage"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updatePackage",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{localToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"packageId\":1,\n    \"enName\":\"ndew package\",\n    \"frName\":\"frdName\",\n    \"behindTheWheelHourCount\":10,\n    \"courseHourCount\":5,\n    \"isOnline\":false,\n    \"enDescription\":\"enDescription\",\n    \"frDescription\":\"frDescription\",\n    \"price\":10,\n    \"city\":\"Aleppo\",\n    \"dates\":[\n        {   \n        \"firstDate\":\"2024-11-11\",\n        \"secondDate\":\"2024-11-12\",\n        \"fromTime\":\"10:15\",\n        \"toTime\":\"12:15\"\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localDomain}}/api/updatePackage",
+							"host": [
+								"{{localDomain}}"
+							],
+							"path": [
+								"api",
+								"updatePackage"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addStudentPackage",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{localToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"packageId\":1,\n    \"dateId\":14,\n    \"studentId\":6,\n    \"amount\":2\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localDomain}}/api/addStudentPackage",
+							"host": [
+								"{{localDomain}}"
+							],
+							"path": [
+								"api",
+								"addStudentPackage"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getStudentPackage",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{localToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{localDomain}}/api/getStudentPackage/7",
+							"host": [
+								"{{localDomain}}"
+							],
+							"path": [
+								"api",
+								"getStudentPackage",
+								"7"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "studentDates",
+			"item": [
+				{
+					"name": "getAvailableInstructorDates",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{localToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"studentId\":6,\n    \"date\":\"2025-10-20\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localDomain}}/api/getAvailableInstructorDates",
+							"host": [
+								"{{localDomain}}"
+							],
+							"path": [
+								"api",
+								"getAvailableInstructorDates"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "requestDate",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{localToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"dateId\":26,\n    \"studentId\":6,\n    \"longitude\":\"longitude\",\n    \"latitude\":\"latitude\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localDomain}}/api/requestDate",
+							"host": [
+								"{{localDomain}}"
+							],
+							"path": [
+								"api",
+								"requestDate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getStudentRates",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"studentId\":2\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{hostDomain}}/api/getStudentRates",
+							"host": [
+								"{{hostDomain}}"
+							],
+							"path": [
+								"api",
+								"getStudentRates"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getExcusedStudentDates",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{hostDomain}}/api/getExcusedStudentDates/7",
+							"host": [
+								"{{hostDomain}}"
+							],
+							"path": [
+								"api",
+								"getExcusedStudentDates",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getDoneStudentRequest",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"instructorId\":2,\n    \"requestId\":2\n}"
+						},
+						"url": {
+							"raw": "{{hostDomain}}/api/getDoneStudentRequest/7",
+							"host": [
+								"{{hostDomain}}"
+							],
+							"path": [
+								"api",
+								"getDoneStudentRequest",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getRejectedStudentRequest",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"instructorId\":2,\n    \"requestId\":2\n}"
+						},
+						"url": {
+							"raw": "{{hostDomain}}/api/getRejectedStudentRequest/7",
+							"host": [
+								"{{hostDomain}}"
+							],
+							"path": [
+								"api",
+								"getRejectedStudentRequest",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getPastAcceptedStudentRequest",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{hostDomain}}/api/getPastAcceptedStudentRequest/7",
+							"host": [
+								"{{hostDomain}}"
+							],
+							"path": [
+								"api",
+								"getPastAcceptedStudentRequest",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAcceptedStudentRequest",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"instructorId\":2,\n    \"requestId\":2\n}"
+						},
+						"url": {
+							"raw": "{{hostDomain}}/api/getAcceptedStudentRequest/20",
+							"host": [
+								"{{hostDomain}}"
+							],
+							"path": [
+								"api",
+								"getAcceptedStudentRequest",
+								"20"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getStudentPendingDates",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{localToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{localDomain}}/api/getStudentPendingDates/6",
+							"host": [
+								"{{localDomain}}"
+							],
+							"path": [
+								"api",
+								"getStudentPendingDates",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cancelStudentDate",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{localToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"studentId\":6,\n    \"dateId\":14\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localDomain}}/api/cancelStudentDate",
+							"host": [
+								"{{localDomain}}"
+							],
+							"path": [
+								"api",
+								"cancelStudentDate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getImmediateAvailableDates",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{localToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"studentId\":6\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localDomain}}/api/getImmediateAvailableDates",
+							"host": [
+								"{{localDomain}}"
+							],
+							"path": [
+								"api",
+								"getImmediateAvailableDates"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "localDomain",
+			"value": "http://localhost:8000"
+		},
+		{
+			"key": "localToken",
+			"value": "7|XrjGu4W98yY92zHFZHo3AFGHLU6jS2r2d6Zv2Tou3ea1dfe0"
+		},
+		{
+			"key": "hostDomain",
+			"value": "https://ds.centerdigitaltrans.com"
+		},
+		{
+			"key": "token",
+			"value": "2|bgWDBOKATDHx4nUElWfwPmmRJ2YKBTFsrLFTdLdb576d14a1"
+		},
+		{
+			"key": "domain",
+			"value": ""
+		}
+	]
+}

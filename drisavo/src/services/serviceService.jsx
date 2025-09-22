@@ -1,3 +1,4 @@
+
 import api from '../config/api';
 
 export const serviceService = {
@@ -32,24 +33,58 @@ export const serviceService = {
   },
 
   async createService(payload) {
-    const { data } = await api.post('/admin/services', payload);
-    return data.data;
+    try {
+      const { data } = await api.post('/admin/services', payload);
+      return { success: true, data: data.data };
+    } catch (e) {
+      console.error('Error creating service:', e);
+      if (e.response?.data?.errors) {
+        throw new Error(Object.values(e.response.data.errors).flat().join(', '));
+      }
+      throw new Error(e.response?.data?.message || 'Failed to create service');
+    }
   },
 
   async updateService(id, payload) {
-    const { data } = await api.put(`/admin/services/${id}`, payload);
-    return data.data;
+    try {
+      const { data } = await api.put(`/admin/services/${id}`, payload);
+      return { success: true, data: data.data };
+    } catch (e) {
+      console.error('Error updating service:', e);
+      if (e.response?.data?.errors) {
+        throw new Error(Object.values(e.response.data.errors).flat().join(', '));
+      }
+      throw new Error(e.response?.data?.message || 'Failed to update service');
+    }
   },
 
   async deleteService(id) {
-    await api.delete(`/admin/services/${id}`);
+    try {
+      await api.delete(`/admin/services/${id}`);
+      return { success: true };
+    } catch (e) {
+      console.error('Error deleting service:', e);
+      throw new Error(e.response?.data?.message || 'Failed to delete service');
+    }
   },
 
   async toggleServiceStatus(id) {
-    await api.post(`/admin/services/${id}/toggle-active`);
+    try {
+      await api.post(`/admin/services/${id}/toggle-active`);
+      return { success: true };
+    } catch (e) {
+      console.error('Error toggling service status:', e);
+      throw new Error(e.response?.data?.message || 'Failed to toggle service status');
+    }
   },
 
   async updateOrder(orderArray) {
-    await api.post('/admin/services/update-order', { order: orderArray });
+    try {
+      await api.post('/admin/services/update-order', { order: orderArray });
+      return { success: true };
+    } catch (e) {
+      console.error('Error updating service order:', e);
+      throw new Error(e.response?.data?.message || 'Failed to update service order');
+    }
   },
 };

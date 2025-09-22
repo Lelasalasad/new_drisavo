@@ -6,6 +6,7 @@ import { useTranslation } from 'react-i18next';
 const AdminHeader = ({ onMenuClick }) => {
   const { logout } = useAuth();
   const { t } = useTranslation();
+/*by lelas alasad*/
 
   return (
     <header className="admin-header">

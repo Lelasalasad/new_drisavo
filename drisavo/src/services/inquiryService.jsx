@@ -1,4 +1,5 @@
 import api from '../config/api';
+/*by lelas alasad*/
 
 export const inquiryService = {
   async submitInquiry(payload) {

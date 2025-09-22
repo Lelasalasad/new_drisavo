@@ -1,5 +1,6 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import { authService } from '../services/authService';
+/*by lelas alasad*/
 
 const AuthContext = createContext(undefined);
 
@@ -28,13 +29,11 @@ export const AuthProvider = ({ children }) => {
           setUser(userData);
           setIsAuthenticated(true);
           
-          // تحقق من صحة التوكن مع الخادم
           const currentUser = await authService.getCurrentUser();
           if (currentUser) {
             setUser(currentUser);
             localStorage.setItem('user_data', JSON.stringify(currentUser));
           } else {
-            // التوكن غير صالح
             await logout();
           }
         }
@@ -78,7 +77,6 @@ export const AuthProvider = ({ children }) => {
   };
 
   const isAdmin = () => {
-    // تأكد هنا من أن المستخدم لديه صلاحية أدمن
     return user?.role === 'admin';
   };
 

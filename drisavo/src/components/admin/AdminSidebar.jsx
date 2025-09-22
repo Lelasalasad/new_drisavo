@@ -1,17 +1,24 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Home, Settings, FileText, MessageSquare, X } from 'lucide-react';
+import { Home,User, Settings, FileText, MessageSquare, X ,MapPin} from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
 const AdminSidebar = ({ isOpen, onClose }) => {
   const location = useLocation();
   const { t } = useTranslation();
+/*by lelas alasad*/
 
   const menuItems = [
-    { path: '/admin', icon: Home, label: t('adminSidebar.dashboard') }, // لأن Route index تساوي /admin
+    { path: '/admin', icon: Home, label: t('adminSidebar.dashboard') }, 
     { path: '/admin/services', icon: Settings, label: t('adminSidebar.services') },
     { path: '/admin/inquiries', icon: MessageSquare, label: t('adminSidebar.inquiries') },
     { path: '/admin/content', icon: FileText, label: t('adminSidebar.content') },
+    { path: '/admin/cities', icon: MapPin, label: t('adminSidebar.cities') },
+      { path: '/admin/instructor-content', icon: User , label: t('adminSidebar.trainerContent') }, // إضافة عنصر المدربين
+      { path: '/admin/addpartner', icon: User , label: t('adminSidebar.AdminAddPartner') }, // إضافة عنصر المدربين
+
+
+
   ];
 
   const isActive = (path) => {
